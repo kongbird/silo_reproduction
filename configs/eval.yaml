@@ -1,0 +1,11 @@
+seed: 123
+num_envs: 64
+num_episodes: 2000
+deterministic: true
+
+checkpoint: checkpoints/best_success.pt
+dataset: datasets/test_states.pt
+
+save_json: logs/evaluation.json
+save_video: true
+video_dir: videos/evaluation

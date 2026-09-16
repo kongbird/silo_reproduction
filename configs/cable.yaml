@@ -1,0 +1,23 @@
+length: 0.375
+num_links: 18
+radius: 0.003
+
+joint:
+  stiffness: 0.01
+  damping: 0.001
+  plasticity_beta: 0.7
+
+collision:
+  friction_static: 0.5
+  friction_dynamic: 0.5
+  restitution: 0.0
+
+mass:
+  total_mass: 0.03
+
+randomization:
+  initial_y_range: [-0.2, 0.2]
+
+observation:
+  num_points: 4
+  point_noise_std: 0.001

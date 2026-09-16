@@ -1,0 +1,17 @@
+device: cuda:0
+seed: 0
+num_envs: 16
+
+physics:
+  dt: 0.004166666666666667
+  control_dt: 0.016666666666666666
+  substeps: 4
+  solver_position_iterations: 16
+  solver_velocity_iterations: 1
+
+episode:
+  horizon: 32
+
+render:
+  enabled: false
+  render_mode: null

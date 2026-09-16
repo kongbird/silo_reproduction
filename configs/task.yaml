@@ -1,0 +1,22 @@
+robot: panda
+
+control:
+  mode: pd_joint_delta_pos
+  action_dim: 7
+  action_low: -1.0
+  action_high: 1.0
+  joint_delta_scale: 0.1
+
+harness:
+  x_range: [0.3, 0.75]
+  y_range: [-0.4, 0.4]
+  yaw_range_deg: [-90.0, 90.0]
+
+reward:
+  distance_coefficient: 1000.0
+  grasp_bonus: 1.0
+  success_bonus: 1.0
+  success_epsilon: 0.012
+
+reset:
+  cached_state_count: 32768

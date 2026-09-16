@@ -1,0 +1,31 @@
+total_timesteps: 80000000
+
+num_envs: 1024
+num_steps: 16
+episode_horizon: 32
+
+gamma: 0.95
+gae_lambda: 0.95
+
+learning_rate: 0.0003
+optimizer: adam
+
+update_epochs: 8
+minibatch_size: 512
+num_minibatches: 32
+
+clip_coef: 0.2
+clip_value_loss: false
+entropy_coef: 0.0
+value_loss_coef: 0.5
+max_grad_norm: 0.5
+target_kl: 0.1
+
+normalize_advantage: true
+
+network:
+  hidden_sizes: [256, 256, 256]
+  activation: tanh
+
+checkpoint_interval: 5000000
+eval_interval: 1000000
