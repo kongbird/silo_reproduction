@@ -63,3 +63,15 @@ tmp/
 temp/
 *.tmp
 *.bak
+
+datasets/*
+!datasets/.gitkeep
+
+checkpoints/*
+!checkpoints/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+videos/*
+!videos/.gitkeep
