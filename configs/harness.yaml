@@ -1,0 +1,34 @@
+# Approximate harness geometry.
+# Exact dimensions are not specified in the SILO paper.
+
+geometry:
+  inner_width: 0.024
+  pillar_height: 0.030
+  pillar_thickness: 0.006
+  depth: 0.018
+  bottom_thickness: 0.006
+
+# Fixed pose used for the first simulation prototype.
+# Coordinates are expressed in the robot/world frame.
+pose:
+  position: [0.20, 0.00, 0.001]
+  yaw_deg: 90.0
+
+material:
+  # Assumed values; not specified in the paper.
+  static_friction: 0.8
+  dynamic_friction: 0.6
+  restitution: 0.0
+
+appearance:
+  color_rgba: [0.15, 0.35, 0.85, 1.0]
+
+camera:
+  eye: [0.65, -0.55, 0.42]
+  target: [0.10, 0.00, 0.04]
+  width: 640
+  height: 480
+  fov: 0.75
+  near: 0.01
+  far: 10.0
+
